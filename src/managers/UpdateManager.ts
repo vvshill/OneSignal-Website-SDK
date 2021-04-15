@@ -10,6 +10,7 @@ import Utils from "../context/shared/utils/Utils";
 import { SessionOrigin } from "../models/Session";
 import { OutcomeRequestData } from "../models/OutcomeRequestData";
 import { logMethodCall } from '../utils';
+import { UpdatePlayerExternalUserId } from "../models/UpdatePlayerOptions";
 
 export class UpdateManager {
   private context: ContextSWInterface;
