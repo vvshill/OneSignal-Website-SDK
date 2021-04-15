@@ -1,6 +1,6 @@
 import { SecondaryChannelProfile } from './SecondaryChannelProfile';
 
-interface BundleTypeEmail {
+export interface BundleTypeEmail {
   emailId?: string;
   emailAddress: string;
   identifierAuthHash: string;
