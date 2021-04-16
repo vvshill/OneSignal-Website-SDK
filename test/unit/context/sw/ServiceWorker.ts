@@ -162,13 +162,6 @@ test('displayNotification - persistNotification - false', async t => {
  * onNotificationClicked()
  ****************************************************/
 
-async function setupFakePlayerId(): Promise<string> {
-  const subscription: Subscription = new Subscription();
-  subscription.deviceId = Random.getRandomUuid();
-  await OneSignal.database.setSubscription(subscription);
-  return subscription.deviceId;
-}
-
 function mockNotificationNotificationEventInit(id: string): NotificationEventInit {
   const notificationOptions: NotificationOptions = { data: { id: id } };
   const notification = new MockNotification("Title", notificationOptions);
