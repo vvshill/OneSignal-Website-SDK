@@ -16,6 +16,7 @@ import { Subscription } from '../../../../src/models/Subscription';
 import { MockPushEvent } from '../../../support/mocks/service-workers/models/MockPushEvent';
 import { MockPushMessageData } from '../../../support/mocks/service-workers/models/MockPushMessageData';
 import OneSignalUtils from '../../../../src/utils/OneSignalUtils';
+import { setupFakePlayerId } from '../../../support/tester/utils';
 
 declare var self: MockServiceWorkerGlobalScope;
 
