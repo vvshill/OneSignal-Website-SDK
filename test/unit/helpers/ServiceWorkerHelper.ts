@@ -25,7 +25,7 @@ test("sendOnSessionCallIfNecessary, for push player", async t => {
   const pushDeviceRecord = new PushDeviceRecord(rawSubscription);
   pushDeviceRecord.appId = OneSignal.config.appId;
   const session: Session = initializeNewSession(
-    { deviceId: pushPlayerId, appId: OneSignal.config.app_id, deviceType: DeliveryPlatformKind.ChromeLike }
+    { deviceId: pushPlayerId, appId: pushDeviceRecord.appId!, deviceType: DeliveryPlatformKind.ChromeLike }
   );
 
   // 3. Nock out push player on session before the network call is made.
