@@ -33,7 +33,7 @@ test("sendOnSessionUpdateFromPage, makes on_session call for existing player", a
       app_id: OneSignal.config.appId,
       device_model: '',
       device_os: -1,
-      device_type: 5,
+      device_type: DeliveryPlatformKind.ChromeLike,
       language: 'en',
       notification_types: -2,
       sdk: '1',
