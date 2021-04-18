@@ -134,7 +134,7 @@ test("sendOnSessionCallIfNecessary, for email player", async t => {
     { deviceId: pushPlayerId, appId: pushDeviceRecord.appId!, deviceType: DeliveryPlatformKind.ChromeLike }
   );
 
-  // 3. Nock out push player on session before the network call is made.
+  // 3. Nock out push player on_focus before the network call is made.
   const onSessionNockPromise = NockOneSignalHelper.nockPlayerOnFocus(pushPlayerId);
 
   // 4. Kick off on_focus call
